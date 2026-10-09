@@ -13,11 +13,6 @@ int main()
 
             scanf("%d", &t[i]); // 1 2 3
         }
-
-
-
-
-
         int count = 0;
         for (int i = 0; i < b; i++) // 1
         {
@@ -32,16 +27,6 @@ int main()
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-        
         printf("%d\n", b - count);
     }
     return 0;
