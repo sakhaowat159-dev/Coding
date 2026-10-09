@@ -19,7 +19,7 @@ int main()
 
         if (i < a)
         {
-            printf(" hate ");
+            printf(" that ");
         }
         else
             printf(" it");
