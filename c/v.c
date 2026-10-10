@@ -2,15 +2,26 @@
 
 int main()
 {
-    int marks;
+    int t[100], a,count=0;
+    scanf("%d", &a);
 
-    for (int i = 1; i <= 3; i++)
+    for (int i = 0; i < a; i++)
     {
-        printf("Student %d marks: ", i);
-        scanf("%d", &marks);
-
-        printf("Marks = %d\n", marks);
+        scanf("%d", &t[i]); //{1,2,3,3,5,6};
     }
+
+    for (int i = 0; i < a - 1; i++)
+    {
+
+        for (int j = i+1; j < a; j++)
+        {
+            if (t[i] == t[j])
+            {
+                count++;
+            }
+        }
+    }
+    printf("%d", count);
 
     return 0;
 }
