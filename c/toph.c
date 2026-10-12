@@ -4,7 +4,8 @@ int main()
     int a, b, c[10000],count=0;
     scanf("%d %d", &a, &b);
 
-    for (int i = 0; i < a; i++)
+    for (int i = 0; i < a; i++)3
+
     {
 
         scanf("%d", &c[i]);
@@ -17,7 +18,7 @@ int main()
         {
             if (c[i] + c[j] >= b)
             {
-                count = 1;
+                count= 1;
                 break;
             }
         }
