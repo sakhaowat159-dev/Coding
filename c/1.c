@@ -5,7 +5,7 @@ int main()
 
     int i, t;
     long long n;
-    scanf("%d",&t);
+    scanf("%d", &t);
     for (i = 0; i < t; i++)
     {
         scanf("%lld", &n);

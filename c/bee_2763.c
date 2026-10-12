@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int a, b, c, d;
-    scanf("%d.%d.%d-%d", &a, &b, &c, &d);
-    printf("%03d\n%03d\n%03d\n%02d\n", a, b, c, d);
+    int A ,B ,C ,D;
+    scanf("%d %d %d %d",&A,&B,&C,&D);
+    printf("DIFERENCA = %d\n",(A * B - C * D));
     return 0;
 }

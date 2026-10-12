@@ -1,19 +1,49 @@
 #include <stdio.h>
-#include<limits.h>
+#include <limits.h>
 int main()
 {
 
-    int a, t[10000] = {1, 2, 3, 4, 5, 6, 7}, max = INT_MAX;
-
-    for (int i = 0; i < 7; i++)
+    int a, t[10000];
+    scanf("%d", &a);
+    for (int i = 0; i < a; i++)
+    {
+        scanf("%d", &t[i]);
+    }
+    for (int i = 0; i < a - 1; i++)
     {
 
-        if (t[i] < max)
-
+        for (int j = i + 1; j < a; j++)
         {
-            max = t[i];
+
+            if (t[i] > t[j])
+            {
+                int temp = t[i];
+                t[i] = t[j];
+                t[j] = temp;
+            }
         }
     }
-    printf("%d", max);
+
+   
+for (int i = 0; i < a; i++)
+{
+    if (i > 0 && t[i] == t[i - 1])
+    {
+        continue;
+    }
+
+    int count = 0;
+
+    for (int j = 0; j < a; j++)
+    {
+        if (t[i] == t[j])
+        {
+            count++;
+        }
+    }
+
+    printf("%d aparece %d vez(es)\n", t[i], count);
+}
+
     return 0;
 }
