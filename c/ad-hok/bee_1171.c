@@ -24,26 +24,25 @@ int main()
         }
     }
 
-   
-for (int i = 0; i < a; i++)
-{
-    if (i > 0 && t[i] == t[i - 1])
+    for (int i = 0; i < a; i++)
     {
-        continue;
-    }
+        // if (i > 0 && t[i] == t[i - 1])
+        // {
+        //   continue;
+        //}
 
-    int count = 0;
+        int count = 0;
 
-    for (int j = 0; j < a; j++)
-    {
-        if (t[i] == t[j])
+        for (int j = 0; j < a; j++)
         {
-            count++;
+            if (t[i] == t[j])
+            {
+                count++;
+            }
         }
-    }
 
-    printf("%d aparece %d vez(es)\n", t[i], count);
-}
+        printf("%d aparece %d vez(es)\n", t[i], count);
+    }
 
     return 0;
 }
