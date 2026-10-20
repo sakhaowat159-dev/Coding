@@ -1,10 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    long long id[50], marks[50], search, t;
     int count;
     printf("Enter total students  : \n");
     scanf("%d", &count);
+    long long id[count], marks[count], search, t;
+
     for (int i = 0; i < count; i++)
     {
         printf("Enter %dst student ID: \n", i + 1);
@@ -44,7 +45,6 @@ int main()
     }
     else
         printf("Invalid ID\n");
-
 
     return 0;
 }
