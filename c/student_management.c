@@ -5,6 +5,11 @@ int main()
     int count;
     printf("Enter total students  : \n");
     scanf("%d", &count);
+    if (count <= 0)
+    {
+        printf("Invalid student count.\n");
+        return 0;
+    }
     long long id[count], marks[count], search, t;
     char name[count][100];
 

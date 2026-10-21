@@ -22,6 +22,7 @@ int main()
 
     printf("Input your desired Id for mark: \n");
     scanf("%lld", &search);
+    
     printf("Checking ID...\n");
     int h = 0;
     for (int i = 0; i < count; i++)
