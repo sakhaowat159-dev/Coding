@@ -1,9 +1,65 @@
 #include <stdio.h>
 #include <string.h>
+
+void input_section(int count, char name[][100], long long id[], long long marks[])
+{
+
+    for (int i = 0; i < count; i++)
+    {
+        if (i == 0)
+        {
+            printf("Enter %dst student name: \n", i + 1);
+            scanf("%s", name[i]);
+
+            printf("Enter %dst student ID: \n", i + 1);
+            scanf("%lld", &id[i]);
+
+            printf("Enter %dst student Marks: \n", i + 1);
+            scanf("%lld", &marks[i]);
+        }
+        else if (i == 1)
+        {
+            printf("Enter %dnd student name: \n", i + 1);
+            scanf("%s", name[i]);
+
+            printf("Enter %dnd student ID: \n", i + 1);
+            scanf("%lld", &id[i]);
+
+            printf("Enter %dnd student Marks: \n", i + 1);
+            scanf("%lld", &marks[i]);
+        }
+
+        else if (i == 2)
+        {
+            printf("Enter %drd student name: \n", i + 1);
+            scanf("%s", name[i]);
+
+            printf("Enter %drd student ID: \n", i + 1);
+            scanf("%lld", &id[i]);
+
+            printf("Enter %drd student Marks: \n", i + 1);
+            scanf("%lld", &marks[i]);
+        }
+
+        else if (i >= 3)
+        {
+            printf("Enter %dth student name: \n", i + 1);
+            scanf("%s", name[i]);
+
+            printf("Enter %dth student ID: \n", i + 1);
+            scanf("%lld", &id[i]);
+
+            printf("Enter %dth student Marks: \n", i + 1);
+            scanf("%lld", &marks[i]);
+        }
+    }
+}
+
 int main()
 {
+    printf("===== Student Management System =====\n");
     int count;
-    printf("Enter total students  : \n");
+    printf("Enter total students number: \n");
     scanf("%d", &count);
     if (count <= 0)
     {
@@ -13,22 +69,13 @@ int main()
     long long id[count], marks[count], search, t;
     char name[count][100];
 
-    for (int i = 0; i < count; i++)
-    {
-        printf("Enter %dst student name: \n", i + 1);
-        scanf("%s", name[i]);
+    input_section(count, name, id, marks);
 
-        printf("Enter %dst student ID: \n", i + 1);
-        scanf("%lld", &id[i]);
-
-        printf("Enter %dst student Marks: \n", i + 1);
-        scanf("%lld", &marks[i]);
-    }
-
-    printf("Input your desired Id for mark: \n");
+    printf("Input your desired Id for details: \n");
     scanf("%lld", &search);
     printf("Checking ID...\n");
     int h = 0;
+
     for (int i = 0; i < count; i++)
 
     {
