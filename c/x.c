@@ -1,27 +1,29 @@
 #include <stdio.h>
-
 int main()
 {
-    int t[100], a,count=0;
+    int a;
     scanf("%d", &a);
+
+    int t[a];
+    for (int i = 0; i < a; i++)
+    {
+
+        scanf("%d", &t[i]);
+    }
 
     for (int i = 0; i < a; i++)
     {
-        scanf("%d", &t[i]); //{1,2,3,3,5,6};
-    }
-
-    for (int i = 0; i < a - 1; i++)
-    {
-
-        for (int j = i+1; j < a; j++)
+        int count = 0;
+                    
+        for (int j = 0; j < a; j++)
         {
             if (t[i] == t[j])
             {
                 count++;
             }
         }
+        printf("%d occurs %d times\n", t[i], count);
     }
-    printf("%d", count);
 
     return 0;
 }
