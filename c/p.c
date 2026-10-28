@@ -1,17 +1,15 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+#include <math.h>
 
+int main()
+{
 
-long long int a=0,b=0;
-scanf("%d %d",&a,&b);
-printf("%lld\n",(a+b));
+    int a, b;
+    scanf("%d %d", &a, &b);
 
+    double v = pow(a, b);
 
+    printf("%.0lf", v);
 
-
-
-
-
-
-return 0;
+    return 0;
 }
