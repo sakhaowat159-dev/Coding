@@ -1,29 +1,31 @@
-#inclyude < stdio.h>
+#include < stdio.h>
 int main()
 {
 
-    long long int a, sheep[10000000];
-    long long int count = 0;
-    scanf("%lld", &a);
-    for (int i = 0; i < a; i++)
-
-    {
-
-        scanf("%lld", &sheep[i]);
-    }
+    int a, count;
+    scanf("%d", &a);
+    int t[a];
     for (int i = 0; i < a; i++)
     {
-        
-
-            if (sheep[i] % 2 != 0)
-        {
-            count = (count + (sheep[i] - 1));
-            
-        }
-else if()
-
-
+        scanf("%d", &t[i]);
     }
+
+ for (int i = 0; i < a; i++)
+    {
+       if(t[i]%2!=0)
+       
+       {
+        count++;
+
+       }
+       else
+       break;
+    }
+
+
+
+
+
 
     return 0;
 }
