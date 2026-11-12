@@ -1,1 +1,3 @@
- char arr[100];
+#include <stdio.h>
+#include <string.h>
+int main()
