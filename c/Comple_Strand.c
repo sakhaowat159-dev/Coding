@@ -20,15 +20,15 @@ int main()
             {
                 arr[i] = 'T';
             }
-            else if (arr[i] == 'T')
+           if (arr[i] == 'T')
             {
                 arr[i] = 'A';
             }
-            else if (arr[i] == 'C')
+           if (arr[i] == 'C')
             {
                 arr[i] = 'G';
             }
-            else if (arr[i] == 'G')
+        if (arr[i] == 'G')
             {
                 arr[i] = 'C';
             }
