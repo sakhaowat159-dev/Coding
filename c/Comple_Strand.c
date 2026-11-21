@@ -8,7 +8,7 @@ int main()
     {
         int a;
         scanf("%d", &a);
-        getchar();
+        getchar();  
         char arr[1000];
 
         scanf("%[^\n]", &arr);
