@@ -1,23 +1,17 @@
 #include <stdio.h>
-int main()
-{
 
-    int a;
-    scanf("%d", &a);
+int main() {
+    int i, number;
+    int factorial = 1;
 
-    for (int i = 1; i <= a; i++)
-    {
-        for (int k = 0; k < a - i; k++)
-        {
-            printf(" ");
-        }
+    printf("Enter a positive number: ");
+    scanf("%d", &number);
 
-        for (int j = 1; j <= i; j++)
-        {
-            printf("* ");
-        }
-        printf("\n");
+    for (i = 1; i <= number; i++) {
+        factorial = factorial * i;
     }
+
+    printf("Factorial = %d\n", factorial);
 
     return 0;
 }
